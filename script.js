@@ -1,6 +1,6 @@
 
 
-const scrollToSection2 = () =>{
+const scrollToSection1 = () =>{
     document.querySelector('#section--1').scrollIntoView({behavior: 'smooth'})
 
 }
