@@ -1,3 +1,10 @@
+*:root{
+  --primary--color: #FDF5E6;
+}
+
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,14 +17,19 @@
     box-sizing: border-box;
   }
   body{
-    font-family: 'Playfair Display', serif;
+    font-family: 'Cormorant Garamond', serif;
     scroll-behavior: smooth;
 
   }
   hr{
     border: none;
-    border-top: 2px solid black;
+    border-top: 2px solid var(--primary--color);
   
+  }
+
+
+  h1{
+    color: var(--primary--color);
   }
 
 
@@ -35,11 +47,11 @@
   
   navbar a {
     float: left;
-    color: black;
+    color: #FDF5E6;
     text-align: center;
     padding: 12px;
     text-decoration: none;
-    font-size: 22px; 
+    font-size: 26px; 
     line-height: 25px;
     border-radius: 4px;
     text-transform: capitalize;
@@ -68,11 +80,13 @@
 
 .main{
     position: relative;
-    background: url('daniel-j-schwarz-oARPb2dEOtQ-unsplash.jpg') no-repeat center;
+    background: url('snakersik_maledive_beach_sunset_prestige_luxury_775aed1e-4029-4eca-82a9-110e7e946a3e.png') no-repeat center;
     background-size: cover;
-    height: 70vh;
+    background-position: center;
+    height: 85vh;
     width: 100vw;
     overflow: hidden;
+    backdrop-filter: opacity(10%);
 
 
 }
@@ -80,37 +94,40 @@
 
 .container{
     position: absolute;
-    top: 75%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     
+    
 }
 
 .container > h1{
-    color: #030302;
-    font-size: 80px;
-    font-weight: 900;
+    color: var(--primary--color);
+    font-size: 150px;
+    font-weight: 800;
+    
     
 
 }
 
 .container > p{
-    font-size: 33px;
-    color: #030302;
+    font-size: 40px;
+    color: var(--primary--color);
     font-weight: 600;
 }
 
 .btn{
   margin-top: 20px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 150px;
   height: 50px;
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 400;
+  color: var(--primary--color);
 }
 
 .btn:hover{
@@ -125,51 +142,20 @@
   padding-top: 30px;
   justify-content: center;
   gap: 20px;
-}
-
-.featured-travel{
-  
-  width: 390px;
-  height: 300px;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  border-radius: 10px;
-  overflow: hidden;
-  
-
-}
-
-#featured-1{
-  background-image: url('aerial-view-city-coastline-turkey.jpg');
-
-}
-#featured-2{
-  background-image: url('vertical-high-angle-shot-white-buildings-santorini-greece.jpg');
-
-}
-#featured-3{
-  background-image: url('truebsee-gbbe4f33f6_1920.jpg');
-
+  flex-wrap: wrap;
 }
 
 
-.featured-description{
-  position: absolute;
-  left: 50%;
-  top: 90%;
-  transform: translate(-50%, -50%);
-  font-size: 20px;
-  color: white;
-  overflow: hidden;
-  text-transform: capitalize;
-  font-weight: 800;
-}
+
+
+
+
+
 
 section{
   width: 100vw;
   height: 70vh;
-  background-color: #CBA490;
+  background-color: #101317;
   overflow: hidden;
 }
 
@@ -184,6 +170,7 @@ section > h1{
   height: 1rem;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 
@@ -199,9 +186,21 @@ section > h1{
   height: 100%;
   background-color: black;
   opacity: 0;
-  transition: opacity 0.3s ease; /* Dodatkowy efekt płynnego przejścia */
+  transition: opacity 0.3s ease; 
 }
 
 .featured-travel:hover::before {
-  opacity: 0.5; /* Możesz dostosować poziom przezroczystości według preferencji */
+  opacity: 0.5; 
+}
+
+.featured-travel:hover .featured-description-container{
+  transition: opacity 0.7s ease;
+  opacity: 1;
+}
+
+
+
+
+#section2{
+  background-color: #a17c58;
 }
