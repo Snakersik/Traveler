@@ -38,7 +38,7 @@ h1 {
 }
 
 p {
-  font-size: 1.8vmin;
+  font-size: 2vmin;
 }
 
 navbar {
@@ -208,6 +208,19 @@ section > h1 {
 @media (max-width: 700px) {
   .flex-container-column  {
     width: 100%;
+  }
+  p{
+    font-size: 18px;
+    padding: 20px;
+  }
+  h1{
+    font-size: 26px;
+  }
+
+  section > h1 {
+    padding-top: 50px;
+    font-size: 30px;
+    text-align: center;
   }
 
 }
