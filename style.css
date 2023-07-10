@@ -100,7 +100,7 @@ navbar a:hover {
 }
 
 .container > h1 {
-  font-size: 150px;
+  font-size: 8vw;
   font-weight: 800;
   opacity: 0;
 }
@@ -156,15 +156,18 @@ section {
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
-  padding: 20px;
+  padding-top:50px;
   align-items: center;
+  padding-bottom: 50px;
+  
 }
 
 .flex-container-column {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.);
+  background-color: rgba(0, 0, 0, 0.2);
   width: 390px;
+  
 }
 
 section > h1 {
@@ -183,15 +186,26 @@ section > h1 {
 .flex-container-column > p {
 
   padding: 10px;
+  min-height: 150px;
 }
+
 
 .flex-container-column > .underline {
+  width: 100%;
+  
+}
 
+@media (max-width: 1650px) {
+  .flex-container-column  {
+    width: 33.5em;
+  }
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 700px) {
   .flex-container-column  {
     width: 100%;
   }
+
 }
