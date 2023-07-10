@@ -42,7 +42,7 @@
   h1{
     color: var(--primary--color);
     font-size: 30px;
-
+    text-align: center;
     padding: 10px;
   }
 
@@ -192,6 +192,7 @@ section{
   gap: 30px;
   flex-wrap: wrap;
   padding: 20px;
+  align-items: center;
   
  
   
@@ -255,24 +256,10 @@ section > h1{
 
 .flex-container-column > .underline{
 
-  width: 100%;
+  width: 390px;
+
   
 }
 
 
-@media screen and (max-width: 1700px) {
 
-  .flex-container-column > p{
-
-  }
-
-  .flex-container{
-    margin: auto;
-  }
-
- 
-  
-  
-
-
-}
