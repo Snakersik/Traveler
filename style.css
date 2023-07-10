@@ -1,265 +1,197 @@
-*:root{
-  --primary--color: #FDF5E6;
+*:root {
+  --primary--color: #fdf5e6;
 }
-
-
-
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: 'Cormorant Garamond', serif;
-    scroll-behavior: smooth;
-    color: var(--primary--color);
-    
-
-  }
-  hr{
-    border: none;
-    border-top: 2px solid var(--primary--color);
-  
-  }
-
-  .underline{
-    width: 10rem;
-    height: 1rem;
-    margin-left: auto;
-    margin-right: auto;
-  
-  
-  }
-
-
-  h1{
-    color: var(--primary--color);
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-  }
-
-  p{
-    font-size: 22px;
-  }
-
-
-
-
-  navbar {
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px 40px;
-    transition: 0.4s;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 99;
-  }
-  
-  navbar a {
-    float: left;
-    color: #FDF5E6;
-    text-align: center;
-    padding: 12px;
-    text-decoration: none;
-    font-size: 26px; 
-    line-height: 25px;
-    border-radius: 4px;
-    text-transform: capitalize;
-  }
-  
-  navbar .logo {
-    font-size: 35px;
-    font-weight: bold;
-    transition: 0.4s;
-  }
-  
-  navbar a:hover {
-    background-color: rgba(252, 252, 252, 0.4);
-    color: black;
-    cursor:pointer;
-  }
-  
-
-  
-  .navbar-right {
-    float: right;
-  }
-
-
-
-
-.main{
-    position: relative;
-    background: url('snakersik_maledive_beach_sunset_prestige_luxury_775aed1e-4029-4eca-82a9-110e7e946a3e.png') no-repeat center;
-    background-size: cover;
-    background-position: center;
-    height: 85vh;
-    width: 100vw;
-    overflow: hidden;
-    
-
-
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Cormorant Garamond", serif;
+  scroll-behavior: smooth;
+  color: var(--primary--color);
+}
+hr {
+  border: none;
+  border-top: 2px solid var(--primary--color);
 }
 
-
-.container{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    
-    
+.underline {
+  width: 10rem;
+  height: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.container > h1{
-    
-    font-size: 150px;
-    font-weight: 800;
-    opacity: 0;
+h1 {
+  color: var(--primary--color);
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
 
+p {
+  font-size: 22px;
+}
 
+navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+navbar a {
+  float: left;
+  color: #fdf5e6;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 26px;
+  line-height: 25px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+navbar .logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+navbar a:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  color: black;
+  cursor: pointer;
+}
+
+.navbar-right {
+  float: right;
+}
+
+.main {
+  position: relative;
+  background: url("snakersik_maledive_beach_sunset_prestige_luxury_775aed1e-4029-4eca-82a9-110e7e946a3e.png")
+    no-repeat center;
+  background-size: cover;
+  background-position: center;
+  height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container > h1 {
+  font-size: 150px;
+  font-weight: 800;
+  opacity: 0;
 }
 
 @keyframes kenburns-left {
   0% {
-    transform: scale(0.5) ;
+    transform: scale(0.5);
     opacity: 0;
-
   }
   100% {
-    transform: scale(1.1) ;
+    transform: scale(1.1);
     opacity: 1;
-
   }
 }
 
-
-
-
-
-.container > p{
-    font-size: 40px;
-    color: var(--primary--color);
-    font-weight: 600;
-    opacity: 0;
-    
+.container > p {
+  font-size: 40px;
+  color: var(--primary--color);
+  font-weight: 600;
+  opacity: 0;
 }
 
-.btn{
+.btn {
   margin-top: 20px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 150px;
   height: 50px;
   text-transform: uppercase;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--primary--color);
 }
 
-.btn:hover{
+.btn:hover {
   background-color: rgba(180, 175, 175, 0.4);
-  cursor:pointer;
+  cursor: pointer;
 }
 
-
-.kenburns-left{
+.kenburns-left {
   animation: kenburns-left 7s 1s ease-out both;
- 
 }
 
-section{
+section {
   width: 100vw;
   height: auto;
   background-color: #101317;
- 
 }
 
-.flex-container{
+.flex-container {
   display: flex;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
   padding: 20px;
   align-items: center;
-  
- 
-  
-
-
 }
 
-.flex-container-column{
+.flex-container-column {
   display: flex;
   flex-direction: column;
- 
-  
-
+  background-color: rgba(0, 0, 0, 0.);
+  width: 390px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-section > h1{
+section > h1 {
   padding-top: 50px;
   font-size: 50px;
   text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-#section2{
+#section2 {
   background-color: #a17c58;
   height: auto;
 }
 
-.flex-container-column > img{
-  width: 390px;
 
+
+.flex-container-column > p {
+
+  padding: 10px;
+}
+
+.flex-container-column > .underline {
 
 }
 
-.flex-container-column > p{
-  max-width: 390px;
 
+@media (max-width: 768px) {
+  .flex-container-column  {
+    width: 100%;
+  }
 }
-
-.flex-container-column > .underline{
-
-  width: 390px;
-
-  
-}
-
-
-
