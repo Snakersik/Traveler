@@ -24,6 +24,7 @@ const revealElements = (entries, observer) => {
     entries.forEach((entry) => {
         if(!entry.isIntersecting) return ;
         entry.target.classList.remove('section-hidden');
+        observer.unobserve(entry.target)
         
 
     })
@@ -37,6 +38,15 @@ const revealElements = (entries, observer) => {
  allSections.forEach((sec) => {
     sec.classList.add('section-hidden')
     sectionsObserver.observe(sec)
- })
+ });
+
+ 
+const loader = document.querySelector('.loader')
+
+addEventListener("load", function(){
+    loader.style.display = "none"
+});
+
+
 
 
