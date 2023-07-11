@@ -10,15 +10,20 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Document</title>
   </head>
   <body>
     <navbar>
       <a class="logo" onclick="scrollToHome()">LOGO</a>
-      <div class="navbar-right">
-        <a onclick="scrollToSection1()">Trips</a>
-        <a>guide</a>
-        <a>something</a>
+      <div class="navbar-right" id="nav-right">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+        <a onclick="scrollToSection1()">Featured</a>
+        <a>About </a>
+        <a>Contact</a>
+
       </div>
     </navbar>
 

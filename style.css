@@ -32,13 +32,13 @@ hr {
 
 h1 {
   color: var(--primary--color);
-  font-size: 2.5vmin;
+  font-size: 30px;
   text-align: center;
   padding: 10px;
 }
 
 p {
-  font-size: 2vmin;
+  font-size: 24px;
 }
 
 navbar {
@@ -75,6 +75,14 @@ navbar a:hover {
   color: black;
   cursor: pointer;
 }
+
+.navbar-right a:hover:first-child{
+  background-color: unset;
+  color: rgba(252, 252, 252, 0.4);
+  cursor: pointer;
+}
+
+
 
 .navbar-right {
   float: right;
@@ -129,7 +137,7 @@ navbar a:hover {
   margin-top: 20px;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 19vmin;
+  width: 20vmin;
   height: 50px;
   text-transform: uppercase;
   font-family: "Playfair Display", serif;
@@ -188,7 +196,7 @@ section > h1 {
 .flex-container-column > p {
 
   padding: 10px;
-  min-height: 20vmin;
+  min-height: 250px;
 }
 
 
@@ -197,21 +205,49 @@ section > h1 {
   
 }
 
+
+.navbar-right  .icon{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1650px) {
   .flex-container-column  {
-    width: 33.5em;
+    width: 45%;
+  }
+  .flex-container-column > p {
+    font-size: 22px;
   }
 }
 
 
 
 @media (max-width: 700px) {
+   .navbar-right a {display: none;}
+   .navbar-right .icon {
+
+    display: block;
+  }
+
+  
+
   .flex-container-column  {
     width: 100%;
   }
-  p{
-    font-size: 18px;
-    padding: 20px;
+ .flex-container-column > p{
+    font-size: 20px;
+    padding-left: 30px;
   }
   h1{
     font-size: 26px;
@@ -219,8 +255,36 @@ section > h1 {
 
   section > h1 {
     padding-top: 50px;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
+  }
+  .btn{
+    font-size: 100%;
+    width: 30vmin;
+  }
+  .container > h1 {
+    font-size: 15vmin;
+  }
+  .container > p {
+    font-size: 5vmin;
   }
 
 }
+
+@media (max-width: 700px) {
+
+  .navbar-right.responsive .icon {
+
+    right: 0;
+    top: 0;
+    text-align: right;
+  }
+  .navbar-right.responsive a {
+    float: none;
+    display: block;
+    text-align: right;
+
+  }
+
+}
+
