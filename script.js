@@ -1,5 +1,5 @@
 
-
+const allSections = document.querySelectorAll('.flex-container-column')
 const scrollToSection1 = () =>{
     document.querySelector('#section--1').scrollIntoView({behavior: 'smooth'})
 
@@ -18,3 +18,25 @@ function myFunction() {
       x.className = "navbar-right";
     }
   }
+
+
+const revealElements = (entries, observer) => {
+    entries.forEach((entry) => {
+        if(!entry.isIntersecting) return ;
+        entry.target.classList.remove('section-hidden');
+        
+
+    })
+}
+
+ 
+  const sectionsObserver = new IntersectionObserver(revealElements, {
+    root: null,
+    threshold: 0.20,
+  });
+ allSections.forEach((sec) => {
+    sec.classList.add('section-hidden')
+    sectionsObserver.observe(sec)
+ })
+
+
