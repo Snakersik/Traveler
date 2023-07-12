@@ -1,52 +1,54 @@
+const allSections = document.querySelectorAll(".fade-in");
+const navbar = document.querySelector("nav");
+const navRight = document.getElementById("nav-right");
+const loader = document.querySelector(".loader");
+const logo = document.querySelector(".logo");
 
-const allSections = document.querySelectorAll('.flex-container-column')
-const scrollToSection1 = () =>{
-    document.querySelector('#section--1').scrollIntoView({behavior: 'smooth'})
-
+console.log(allSections)
+function scrollToSection(sectionSelector) {
+  const section = document.querySelector(sectionSelector);
+  section.scrollIntoView({ behavior: "smooth" });
+  myFunction();
 }
-
-function scrollToHome(){
-    document.querySelector('.main').scrollIntoView({behavior: 'smooth'})
-}
-
 
 function myFunction() {
-    var x = document.getElementById("nav-right");
-    if (x.className === "navbar-right") {
-      x.className += " responsive";
-    } else {
-      x.className = "navbar-right";
-    }
+  if (navRight.className === "navbar-right") {
+    navRight.className += " responsive";
+  } else {
+    navRight.className = "navbar-right";
   }
-
-
-const revealElements = (entries, observer) => {
-    entries.forEach((entry) => {
-        if(!entry.isIntersecting) return ;
-        entry.target.classList.remove('section-hidden');
-        observer.unobserve(entry.target)
-        
-
-    })
 }
 
- 
-  const sectionsObserver = new IntersectionObserver(revealElements, {
-    root: null,
-    threshold: 0.20,
-  });
- allSections.forEach((sec) => {
-    sec.classList.add('section-hidden')
-    sectionsObserver.observe(sec)
- });
+navRight.addEventListener("focusout", (event) => {
 
- 
-const loader = document.querySelector('.loader')
-
-addEventListener("load", function(){
-    loader.style.display = "none"
+  navRight.className = navRight.className.replace("responsive", "").trim();
 });
 
+const revealElements = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove("content-hidden");
+    observer.unobserve(entry.target);
+  });
+};
 
+const sectionsObserver = new IntersectionObserver(revealElements, {
+  root: null,
+  threshold: 0.2,
+});
+allSections.forEach((sec) => {
+  sec.classList.add("content-hidden");
+  sectionsObserver.observe(sec);
+});
 
+addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
+document.addEventListener("click", function(event) {
+  const isInsidenav = navRight.contains(event.target) || logo.contains(event.target);
+  if (!isInsidenav && navRight.className !== "navbar-right" ) {
+    myFunction();
+  }
+});
 
