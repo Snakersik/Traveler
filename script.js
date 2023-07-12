@@ -19,10 +19,10 @@ function myFunction() {
   }
 }
 
-navRight.addEventListener("focusout", (event) => {
+// navRight.addEventListener("focusout", (event) => {
 
-  navRight.className = navRight.className.replace("responsive", "").trim();
-});
+//   navRight.className = navRight.className.replace("responsive", "").trim();
+// });
 
 const revealElements = (entries, observer) => {
   entries.forEach((entry) => {
