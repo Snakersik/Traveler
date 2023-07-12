@@ -105,17 +105,29 @@ nav a:hover {
     no-repeat center;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   overflow: hidden;
 }
 
+.main::after{
+  position: absolute;
+  top: 0;
+  height: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);;
+  content: "";
+  z-index: 1;
+}
+
 .container {
   position: absolute;
-  top: 80%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  z-index: 2;
 }
 
 .container > h1 {
@@ -145,7 +157,7 @@ nav a:hover {
 .btn {
   margin-top: 20px;
   border-radius: 20px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 20vmin;
   height: 50px;
   text-transform: uppercase;
@@ -179,6 +191,8 @@ section {
   padding-top: 50px;
   align-items: center;
   padding-bottom: 50px;
+  margin: auto;
+  
 }
 
 .flex-container-column {
@@ -190,8 +204,9 @@ section {
 
 }
 .flex-container-column > p {
-  padding: 10px;
   min-height: 250px;
+  padding: 20px;
+  
 }
 
 .flex-container-column > .underline {
@@ -261,12 +276,16 @@ section > h1 {
 }
 
 @media (max-width: 1650px) {
-  .flex-container-column {
-    width: 45%;
-    max-width: 600px;
+  .flex-container{
+    max-width: 1000px;
   }
+  .flex-container-column{
+    width: 48%;
+  }
+
   .flex-container-column > p {
     font-size: 22px;
+    min-height: 200px;
   }
 }
 @media (max-width: 700px) {
@@ -282,7 +301,7 @@ section > h1 {
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 808px) {
   .navbar-right a {
     display: none;
   }
