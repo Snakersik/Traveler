@@ -187,6 +187,7 @@ section {
   background-color: rgba(0, 0, 0, 0.2);
   width: 390px;
   transition: transform 1s, opacity 1s;
+
 }
 .flex-container-column > p {
   padding: 10px;
@@ -262,6 +263,7 @@ section > h1 {
 @media (max-width: 1650px) {
   .flex-container-column {
     width: 45%;
+    max-width: 600px;
   }
   .flex-container-column > p {
     font-size: 22px;
@@ -289,7 +291,7 @@ section > h1 {
   }
 
   .flex-container-column {
-    width: 100%;
+    width: 70%;
   }
   .flex-container-column > p {
     font-size: 20px;
@@ -320,4 +322,11 @@ section > h1 {
   .quot {
     font-size: 50px;
   }
+  .flex-container-column > p
+  {
+    min-height: auto;
+    padding-bottom: 20px;
+  }
+
+
 }
