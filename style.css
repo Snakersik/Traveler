@@ -12,11 +12,14 @@
   background: transparent;
   scroll-behavior: smooth;
   box-sizing: border-box;
+
+
 }
 body {
   font-family: "Cormorant Garamond", serif;
   scroll-behavior: smooth;
   color: var(--primary--color);
+  
 }
 hr {
   border: none;
@@ -34,6 +37,7 @@ hr {
   z-index: 999;
   justify-content: center;
   align-items: center;
+  
 }
 
 .underline {
@@ -41,6 +45,7 @@ hr {
   height: 1rem;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 h1 {
@@ -48,6 +53,7 @@ h1 {
   font-size: 30px;
   text-align: center;
   padding: 10px;
+  
 }
 
 p {
@@ -63,6 +69,7 @@ nav {
   width: 100%;
   top: 0;
   z-index: 99;
+  
 }
 
 nav a {
@@ -75,6 +82,7 @@ nav a {
   line-height: 25px;
   border-radius: 4px;
   text-transform: capitalize;
+  
 }
 
 nav .logo {
@@ -119,6 +127,7 @@ nav a:hover {
   background-color: rgba(0, 0, 0, 0.1);;
   content: "";
   z-index: 1;
+  
 }
 
 .container {
@@ -128,12 +137,14 @@ nav a:hover {
   transform: translate(-50%, -50%);
   text-align: center;
   z-index: 2;
+  
 }
 
 .container > h1 {
   font-size: 8vmin;
   font-weight: 800;
   opacity: 0;
+  
 }
 
 @keyframes kenburns-left {
@@ -192,6 +203,7 @@ section {
   align-items: center;
   padding-bottom: 50px;
   margin: auto;
+  
   
 }
 
@@ -275,20 +287,20 @@ section > h1 {
   height: 80vh;
 }
 
+
+
 @media (max-width: 1650px) {
   .flex-container{
     max-width: 1000px;
   }
-  .flex-container-column{
-    width: 48%;
-  }
+
 
   .flex-container-column > p {
     font-size: 22px;
     min-height: 200px;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 808x) {
   .navbar-right.responsive .icon {
     right: 0;
     top: 0;
@@ -345,6 +357,17 @@ section > h1 {
   {
     min-height: auto;
     padding-bottom: 20px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+  }
+  img{
+    aspect-ratio: 16 / 6;
+    object-fit: cover;
+
+  }
+  .flex-container-column{
+    width: 100%;
   }
 
 
