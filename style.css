@@ -242,7 +242,7 @@ section > h1 {
 #quote {
   background-image: url("snakersik_beatifull_landscape_of_beach_and_mountain_dark_and_go_72756840-fced-4432-a5e3-3e9378a0d741-transformed.jpeg");
   background-color: #101317;
-  min-height: 400px;
+  height: auto;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
