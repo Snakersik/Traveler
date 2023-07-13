@@ -5,6 +5,7 @@ const loader = document.querySelector(".loader");
 const logo = document.querySelector(".logo");
 
 
+
 function scrollToSection(sectionSelector) {
   const section = document.querySelector(sectionSelector);
   section.scrollIntoView({ behavior: "smooth" });
@@ -53,4 +54,24 @@ document.addEventListener("click", function(event) {
     myFunction();
   }
 });
+
+
+function ActiveChange(tabbutton, tabcontent ) {
+  const link = document.querySelector(tabbutton);
+  const content = document.querySelector(tabcontent)
+  
+
+  if (link.classList.contains("active-line")) return;
+  
+    const active = document.querySelector(".active-line")
+    const activebar = document.querySelector(".active-tab") 
+
+    active.classList.remove("active-line");
+    activebar?.classList.remove("active-tab")
+
+    link.classList.add("active-line");
+    content.classList.add("active-tab");
+    
+
+}
 

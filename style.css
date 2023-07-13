@@ -45,6 +45,7 @@ hr {
   height: 1rem;
   margin-left: auto;
   margin-right: auto;
+
   
 }
 
@@ -68,7 +69,7 @@ nav {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 999;
+  z-index: 99;
   
 }
 
@@ -282,24 +283,164 @@ section > h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: lighter;
 }
+/* ------------------about us section------------- */
 
-#about {
-  height: 80vh;
+
+article{
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #131c1e;
+  border-radius: 20px;
+  opacity: 0;
+  transition: opacity 0;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  
+
+
+  margin-right: auto;
+  margin-left: auto;
+  
+  
+  
 }
+
+
+#tab-1{
+  
+  top: 0;
+  left: 0;
+}
+#tab-2{
+  
+  top: 0;
+  left: 0;
+  background-color: #182731;
+  
+}
+#tab-3{
+  top: 0;
+  left: 0;
+  background-color: #1e2f47;
+}
+
+article > img{
+  width: 35%;
+  border-radius: 20% 20px 20px 20px;
+  box-shadow:  black -10px 10px 50px ;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+  margin-right: 0;
+}
+article > div{
+  
+  max-width: 40%;
+  margin: auto;
+  margin-left: 0;
+ 
+}
+article  h1{
+  padding: 20px;
+  font-size: 40px;
+
+}
+
+
+article p{
+  font-size: 32px;
+}
+article  span{
+  display: block;
+  border-bottom: #fdf5e6 2px solid;
+  
+}
+
+
+
+.tab{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tab > p{
+ 
+  transition: 0.7s;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-style: 800;
+  
+
+}
+
+.active-line{
+  border-bottom: 2px solid royalblue;
+
+}
+
+.active-tab{
+  opacity: 1;
+  transition: opacity 2s;
+  display: flex;
+  display: flex;
+  
+}
+
+
+
+.tab > p:hover{
+  color: rgb(49, 48, 48);
+ 
+  
+}
+
+
+
+
+
+
 
 
 
 @media (max-width: 1650px) {
+  article{
+    gap: 30px;
+    width: 80%;
+  }
   .flex-container{
     max-width: 1000px;
   }
-}
+  article p{
+    font-size: 18px;
+  }
+  article h1{
+    font-size: 24px;
+  }
+  article > img{
+    width: 50%;
+  }
+  article > div{
+  
+    
+    margin-top: auto;
+    margin-bottom: auto;
+   
+  }
+
 
 
   .flex-container-column > p {
     font-size: 22px;
     min-height: 200px;
   }
+}
 
 @media (max-width: 908px) {
   .navbar-right.responsive .icon {
@@ -364,13 +505,25 @@ section > h1 {
     text-align: left;
     font-size: 20px;
   }
-  img{
+  .flex-container-column img{
     aspect-ratio: 16 / 7;
     object-fit: cover;
 
   }
   .flex-container-column{
     width: 100%;
+  }
+  article{
+    flex-direction: column;
+  }
+  article > div{
+    max-width: 100%;
+    margin: 0;
+    width: 100%;
+  }
+  article > img{
+    width: 100%;
+    margin: auto;
   }
 
 }
