@@ -182,24 +182,20 @@
     </section>
 
     <div id="myModal" class="modal">
-
-      <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        
         <form action="https://formsubmit.co/el/xacuho" method="POST">
-          
-          <form action="https://airform.io/konradtratwal@gmail.com" method="post">
-            <input type="text" name="name" placeholder="Enter your name">
-            <textarea name="message" placeholder="Enter your message"></textarea>
-            <button>Send</button>
-          </form>
+              <input type="text" name="name"  placeholder="Full Name" required>
+              <input type="email" name="email" placeholder="Email Address" required>
+             <textarea placeholder="Your Message" name="message"  required></textarea>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </form>
       </div>
-    
     </div>
 
     <button class="contact" id="openModal"></button>
-
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
