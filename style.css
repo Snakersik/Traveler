@@ -367,6 +367,7 @@ article  span{
   display: flex;
   gap: 20px;
   justify-content: center;
+  
 }
 
 .tab > p{
@@ -376,6 +377,7 @@ article  span{
   padding-bottom: 10px;
   font-size: 30px;
   font-style: 800;
+
   
 
 }
@@ -389,7 +391,7 @@ article  span{
   opacity: 1;
   transition: opacity 2s;
   display: flex;
-  display: flex;
+
   
 }
 
@@ -515,6 +517,8 @@ article  span{
   }
   article{
     flex-direction: column;
+    width: 100%;
+    
   }
   article > div{
     max-width: 100%;
@@ -522,9 +526,19 @@ article  span{
     width: 100%;
   }
   article > img{
-    width: 100%;
+    width: 80%;
     margin: auto;
+    padding-bottom: 0;
   }
+
+  article  h1{
+    padding: 10px;
+  }
+
+  .tab > p{
+    font-size: 20px;
+  }
+
 
 }
 
@@ -534,4 +548,20 @@ article  span{
   {
     font-size: 16px;
 }
+article > p{
+ font-size: 16px;
+}
+
+.tab > p{
+  font-size: 18px;
+}
+}
+
+
+@media (max-width: 500px){
+  .tab{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
