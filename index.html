@@ -183,12 +183,22 @@
 
     <div id="myModal" class="modal">
       <div class="modal-content">
-        <span class="close">&times;</span>
+        
         <form action="https://formsubmit.co/el/xacuho" method="POST" novalidate="">
+          <h1>Contact Us<span class="close">&times;</span></h1>
+          <div >
+              <label>Name</label>
               <input type="text" name="name"  placeholder="Full Name" required>
+            </div>
+            <div>
+              <label>Email</label>
               <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div>
+              <label>Message</label>
              <textarea placeholder="Your Message" name="message"  required></textarea>
-              <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+            </div>
+              <button type="submit" class="btn-submit">Submit</button>
       </form>
       </div>
     </div>

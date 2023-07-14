@@ -425,52 +425,99 @@ article  span{
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 9999; /* Sit on top */
+  display: none;
+  position: fixed; 
+  z-index: 9999;
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.9); 
 }
 
-/* Modal Content/Box */
+
 form {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  background-color: black;
-  margin: 15% auto; /* 15% from the top and centered */
+  background-color: #1e2f47;
+  margin: 15% auto; 
   padding: 20px;
   border: 1px solid #888;
-  width: 60%; /* Could be more or less, depending on screen size */
+  width: 50%; 
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
+ 
   
 }
 input{
-  background-color: red;
-  color: white;
+  background-color: #1e2f47;
+  color: var(--primary--color);
+  height: 30px;
+  
+  border-bottom: 1px solid black;
+  
+ 
 }
-
+label{
+  font-weight: 800;
+  font-size: 22px;
+}
 textarea{
   color: white;
-  background-color: red;
+  background-color: #1e2f47;
   min-height: 100px;
+  font-weight: 800;
+
+  
+  resize: none;
+  
+ 
 }
 
 form > button{
-  background-color: aqua;
+  background-color:rgba(0,0,0,0.3);
+  width: 60%;
+  border-radius: 20px;
+  height: 50px;
+  color: white;
+  
+  overflow: hidden;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(2, 48, 42, 0.3));
+  background-position: 50% 50%;
+  
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size .5s, color .5s;
+}
+
+form > button:hover{
+  background-size: 100% 100%;
   
 }
 
+
+
 .close {
   color: #aaa;
-  margin-left: auto;
-  font-size: 28px;
+  margin-right: auto;
+  font-size: 200%;
   font-weight: bold;
   cursor: pointer;
+ 
+
+ 
+
+}
+form > div{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  gap: 10px;
 }
 
 
