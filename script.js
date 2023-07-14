@@ -4,7 +4,9 @@ const navRight = document.getElementById("nav-right");
 const loader = document.querySelector(".loader");
 const logo = document.querySelector(".logo");
 
-
+const modal = document.getElementById("myModal");
+const closeModal = document.querySelector(".close");
+const openModal = document.getElementById("openModal");
 
 function scrollToSection(sectionSelector) {
   const section = document.querySelector(sectionSelector);
@@ -13,8 +15,8 @@ function scrollToSection(sectionSelector) {
 }
 
 function myFunction() {
-  console.log("click")
-  console.log(navRight)
+  console.log("click");
+  console.log(navRight);
   if (navRight.className === "navbar-right") {
     navRight.className += " responsive";
   } else {
@@ -23,7 +25,6 @@ function myFunction() {
 }
 
 navRight.addEventListener("focusout", (event) => {
-
   navRight.className = navRight.className.replace("responsive", "").trim();
 });
 
@@ -48,30 +49,47 @@ addEventListener("load", function () {
   loader.style.display = "none";
 });
 
-document.addEventListener("click", function(event) {
-  const isInsidenav = navRight.contains(event.target) || logo.contains(event.target);
-  if (!isInsidenav && navRight.className !== "navbar-right" ) {
+document.addEventListener("click", function (event) {
+  const isInsidenav =
+    navRight.contains(event.target) || logo.contains(event.target);
+  if (!isInsidenav && navRight.className !== "navbar-right") {
     myFunction();
   }
 });
 
-
-function ActiveChange(tabbutton, tabcontent ) {
+function ActiveChange(tabbutton, tabcontent) {
   const link = document.querySelector(tabbutton);
-  const content = document.querySelector(tabcontent)
-  
+  const content = document.querySelector(tabcontent);
 
   if (link.classList.contains("active-line")) return;
-  
-    const active = document.querySelector(".active-line")
-    const activebar = document.querySelector(".active-tab") 
 
-    active.classList.remove("active-line");
-    activebar?.classList.remove("active-tab")
+  const active = document.querySelector(".active-line");
+  const activebar = document.querySelector(".active-tab");
 
-    link.classList.add("active-line");
-    content.classList.add("active-tab");
-    
+  active.classList.remove("active-line");
+  activebar?.classList.remove("active-tab");
 
+  link.classList.add("active-line");
+  content.classList.add("active-tab");
 }
 
+openModal.onclick = () => {
+  modal.style.display = "block";
+  console.log("CLICKED");
+  console.log(typeof modal.style.display);
+};
+
+closeModal.onclick = () => {
+  modal.style.display = "none";
+};
+
+window.onclick = (e) => {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+addEventListener("keydown", (e) => {
+  console.log(e.key);
+  if (e.key === "Escape") modal.style.display = "none";
+});
