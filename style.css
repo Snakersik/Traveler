@@ -454,7 +454,7 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
+  
   background-color: #1e2f47;
   margin: auto;
   padding: 20px;
@@ -462,21 +462,22 @@ form {
   width: 50%; 
   border-radius: 20px;
   max-width: 500px;
-  gap: 30px;
-  
-  
+  gap: 10px;
 
-  
-  
- 
-  
 }
+ form > h1 > span {
+ padding-left: 20px;
+
+}
+
+
 input{
   background-color: #1e2f47;
   color: var(--primary--color);
-  height: 30px;
+  height: 40px;
   width: 70%;
   border-bottom: 1px solid black;
+  font-size: 24px;
   
  
 }
@@ -488,6 +489,7 @@ textarea{
   font-weight: 800;
   text-transform: capitalize;
   width: 70%;
+  font-size: 20px;
 
   
   resize: none;
@@ -519,22 +521,7 @@ form > button:hover{
 
 
 
-.close {
-  color: #aaa;
-  font-size: 200%;
-  font-weight: bold;
-  cursor: pointer;
- 
 
- 
-
-}
-form > div{
-  display: flex;
-  flex-direction: column;
-  width: 60%;
-  gap: 10px;
-}
 
 
 

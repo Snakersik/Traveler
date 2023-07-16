@@ -78,8 +78,10 @@ openModal.onclick = () => {
 
 };
 
-closeModal.onclick = () => {
+closeModal.onclick = (e) => {
   modal.style.display = "none";
+  e.preventDefault()
+
 };
 
 window.onclick = (e) => {
