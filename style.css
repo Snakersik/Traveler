@@ -251,6 +251,7 @@ section > h1 {
   justify-content: center;
   align-items: center;
   display: flex;
+
 }
 #quote::before {
   position: absolute;
@@ -436,23 +437,37 @@ article  span{
   overflow: auto;
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9); 
+
+  gap: 0;
+  
+  
+  
+  
 }
+
+
+
 
 
 form {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  gap: 20px;
+
   background-color: #1e2f47;
-  margin: 15% auto; 
+  margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 50%; 
   border-radius: 20px;
   max-width: 500px;
+  gap: 30px;
+  
+  
 
-  justify-content: center;
-  align-items: center;
+  
+  
  
   
 }
@@ -460,20 +475,20 @@ input{
   background-color: #1e2f47;
   color: var(--primary--color);
   height: 30px;
-  
+  text-transform: capitalize;
+  width: 70%;
   border-bottom: 1px solid black;
   
  
 }
-label{
-  font-weight: 800;
-  font-size: 22px;
-}
+
 textarea{
   color: white;
   background-color: #1e2f47;
   min-height: 100px;
   font-weight: 800;
+  text-transform: capitalize;
+  width: 70%;
 
   
   resize: none;
@@ -483,19 +498,19 @@ textarea{
 
 form > button{
   background-color:rgba(0,0,0,0.3);
-  width: 60%;
+  width: 100%;
   border-radius: 20px;
   height: 50px;
   color: white;
   cursor: pointer;
-  
+  margin: auto;
   overflow: hidden;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(2, 48, 42, 0.3));
   background-position: 50% 50%;
-  
   background-repeat: no-repeat;
   background-size: 0% 100%;
   transition: background-size .5s, color .5s;
+  text-transform:uppercase;
 }
 
 form > button:hover{
@@ -507,7 +522,6 @@ form > button:hover{
 
 .close {
   color: #aaa;
-  margin-right: auto;
   font-size: 200%;
   font-weight: bold;
   cursor: pointer;

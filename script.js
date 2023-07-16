@@ -78,9 +78,9 @@ openModal.onclick = () => {
 
 };
 
-// closeModal.onclick = () => {
-//   modal.style.display = "none";
-// };
+closeModal.onclick = () => {
+  modal.style.display = "none";
+};
 
 window.onclick = (e) => {
   if (e.target == modal) {
