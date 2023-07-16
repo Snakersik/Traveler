@@ -75,8 +75,7 @@ function ActiveChange(tabbutton, tabcontent) {
 
 openModal.onclick = () => {
   modal.style.display = "block";
-  console.log("CLICKED");
-  console.log(typeof modal.style.display);
+
 };
 
 closeModal.onclick = () => {
@@ -90,7 +89,7 @@ window.onclick = (e) => {
 };
 
 addEventListener("keydown", (e) => {
-  console.log(e.key);
+  
   if (e.key === "Escape") modal.style.display = "none";
 });
 
