@@ -78,9 +78,9 @@ openModal.onclick = () => {
 
 };
 
-closeModal.onclick = () => {
-  modal.style.display = "none";
-};
+// closeModal.onclick = () => {
+//   modal.style.display = "none";
+// };
 
 window.onclick = (e) => {
   if (e.target == modal) {
@@ -89,6 +89,7 @@ window.onclick = (e) => {
 };
 
 addEventListener("keydown", (e) => {
+  console.log(modal.style.display)
   
   if (e.key === "Escape") modal.style.display = "none";
 });
