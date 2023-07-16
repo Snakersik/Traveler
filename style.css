@@ -192,6 +192,7 @@ section {
   width: 100vw;
   height: auto;
   background-color: #101317;
+  overflow: hidden;
  
 }
 
@@ -287,6 +288,7 @@ section > h1 {
 /* ------------------about us section------------- */
 
 
+
 article{
   padding: 40px;
   display: flex;
@@ -294,12 +296,12 @@ article{
   gap: 50px;
   background-color: #131c1e;
   border-radius: 20px;
-  opacity: 0;
-  transition: opacity 0;
+  opacity: 1;
   display: none;
   margin-right: auto;
   margin-left: auto;
   width: 80%;
+  transition: transform 1s, opacity 1s;
   
 
 
@@ -317,17 +319,20 @@ article{
   left: 0;
 }
 #tab-2{
-  
+
   top: 0;
   left: 0;
   background-color: #182731;
   
 }
 #tab-3{
+
   top: 0;
   left: 0;
   background-color: #1e2f47;
 }
+
+
 
 article > img{
   width: 35%;
@@ -337,12 +342,14 @@ article > img{
   object-position: center;
   margin: auto;
   margin-right: 0;
+
 }
 article > div{
   
   max-width: 40%;
   margin: auto;
   margin-left: 0;
+  
  
 }
 article  h1{
@@ -378,6 +385,7 @@ article  span{
   padding-bottom: 10px;
   font-size: 30px;
   font-style: 800;
+  
 
   
 
@@ -390,8 +398,8 @@ article  span{
 
 .active-tab{
   opacity: 1;
-  transition: opacity 2s;
   display: flex;
+  transition: transform 1s, opacity 1s;
 
   
 }
@@ -404,18 +412,19 @@ article  span{
   
 }
 
-
+/* ---------------------contact form ----------------- */
 .contact{
   position: fixed;
   bottom: 10px;
-  right: 10px;
+  right:  10px;
   padding: 0px;
   width: 10%;
   height: 10%;
-  border-radius: 50%;
+  overflow: hidden;
   background-image: url('chat\ \(1\).png');
   background-position: center;
   background-size: contain;
+  object-fit: cover;
   cursor: pointer;
   background-repeat: no-repeat;
   
@@ -518,6 +527,8 @@ form > button:hover{
   background-size: 100% 100%;
   
 }
+
+
 
 
 
