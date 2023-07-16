@@ -449,6 +449,7 @@ form {
   border: 1px solid #888;
   width: 50%; 
   border-radius: 20px;
+  max-width: 500px;
 
   justify-content: center;
   align-items: center;
@@ -486,6 +487,7 @@ form > button{
   border-radius: 20px;
   height: 50px;
   color: white;
+  cursor: pointer;
   
   overflow: hidden;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(2, 48, 42, 0.3));
