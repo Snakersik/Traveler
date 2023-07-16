@@ -475,7 +475,6 @@ input{
   background-color: #1e2f47;
   color: var(--primary--color);
   height: 30px;
-  text-transform: capitalize;
   width: 70%;
   border-bottom: 1px solid black;
   
